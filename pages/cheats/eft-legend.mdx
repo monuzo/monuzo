@@ -63,6 +63,7 @@ It includes features like aimbot, esp and godmode. For the full feature list che
 >- Radar
 >- Godmode
 >- Speed Hack
+
 <Callout>
 Livestream proof.
 This cheat works for every region.
@@ -90,8 +91,45 @@ import Image from 'next/image'
 <Image src="/screen3.png" width={960} height={540}/>
 <Image src="/screen4.png" width={960} height={540}/>
 
-## Shop
+## Syntax Highlighting
 
+Automatic syntax highlighting:
+
+````markdown
+```js
+console.log('hello, world')
+```
+````
+
+Renders:
+
+```js
+console.log('hello, world')
+```
+
+You can also add the `highlight=<line|range>` modifier to highlight specific lines:
+
+````markdown
+```jsx highlight=4,6-8
+import useSWR from 'swr'
+function Profile() {
+  const { data, error } = useSWR('/api/user', fetcher)
+  if (error) return <div>failed to load</div>
+  if (!data) return <div>loading...</div>
+  return <div>hello {data.name}!</div>
+}
+```
+````
+
+```jsx highlight=4,6-8
+import useSWR from 'swr'
+function Profile() {
+  const { data, error } = useSWR('/api/user', fetcher)
+  if (error) return <div>failed to load</div>
+  if (!data) return <div>loading...</div>
+  return <div>hello {data.name}!</div>
+}
+```
 
 ## Inline Code
 
@@ -103,6 +141,7 @@ You can use \`content\` to wrap inline code content like: `let x = 1`.
 >
 > — Alan Kay, A Personal Computer for Children of All Ages
 Nested quotes:
+
 > > Where some people measure progress in answers-right per test or tests-passed per year, we are more interested in Sistine-Chapel-Ceilings per Lifetime.
 > >
 > > — Alan Kay, A Personal Computer for Children of All Ages
@@ -111,6 +150,7 @@ Nested quotes:
 >
 > — Shu Ding.
 ## Table
+
 | Syntax        | Description |   Test Text |
 | :------------ | :---------: | ----------: |
 | Header        |    Title    | Here's this |
@@ -130,10 +170,14 @@ Renders:
 > <Callout>
 >   Give [**Nextra**](https://github.com/shuding/nextra) a star!
 > </Callout>
+
 Generates:
+
 import Callout from 'nextra-theme-docs/callout'
+
 <div className="p-4 border border-gray-200 dark:border-gray-900 rounded mt-6">
 **Markdown With React Components**
+
 <Callout emoji="✅">
   **MDX** (the library), at its core, transforms MDX (the syntax) to JSX. It
   receives an MDX string and outputs a _JSX string_. It does this by parsing the
