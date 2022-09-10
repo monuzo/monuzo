@@ -91,46 +91,6 @@ import Image from 'next/image'
 <Image src="/screen3.png" width={960} height={540}/>
 <Image src="/screen4.png" width={960} height={540}/>
 
-## Syntax Highlighting
-
-Automatic syntax highlighting:
-
-````markdown
-```js
-console.log('hello, world')
-```
-````
-
-Renders:
-
-```js
-console.log('hello, world')
-```
-
-You can also add the `highlight=<line|range>` modifier to highlight specific lines:
-
-````markdown
-```jsx highlight=4,6-8
-import useSWR from 'swr'
-function Profile() {
-  const { data, error } = useSWR('/api/user', fetcher)
-  if (error) return <div>failed to load</div>
-  if (!data) return <div>loading...</div>
-  return <div>hello {data.name}!</div>
-}
-```
-````
-
-```jsx highlight=4,6-8
-import useSWR from 'swr'
-function Profile() {
-  const { data, error } = useSWR('/api/user', fetcher)
-  if (error) return <div>failed to load</div>
-  if (!data) return <div>loading...</div>
-  return <div>hello {data.name}!</div>
-}
-```
-
 ## Inline Code
 
 You can use \`content\` to wrap inline code content like: `let x = 1`.
