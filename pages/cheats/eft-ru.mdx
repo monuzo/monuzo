@@ -1,68 +1,110 @@
-# Next.js SSG
+# EFT LEGEND
 
-With Next.js, you can pre-render your page using [Static Generation (SSG)](https://nextjs.org/docs/basic-features/pages#static-generation-recommended). Your pages will be generated at build time and statically served to visitors. It can also be cached by a CDN to maximize the performance.
-
-This is supported by Nextra too. Here's an example:
-
-import { useSSG } from 'nextra/ssg'
-
-export const getStaticProps = ({ params }) => {
-  return fetch(`https://api.github.com/repos/shuding/nextra`)
-    .then((res) => res.json())
-    .then((repo) => ({
-      props: {
-        // We add an `ssg` field to the page props,
-        // which will be provided to the Nextra `useSSG` hook.
-        ssg: {
-          stars: repo.stargazers_count,
-        },
-      },
-      // The page will be considered as stale and regenerated every 60 seconds.
-      revalidate: 60,
-    }))
-}
-
-export const Stars = () => {
-  // Get the data from SSG, and render it as a component.
-  const { stars } = useSSG()
-  return <strong>{stars}</strong>
-}
-
-<div className="p-4 border border-gray-200 dark:border-gray-900 rounded mt-6">
-  Nextra has <Stars /> stars on GitHub!
-</div>
-
-The number above was generated at build time via `getStaticProps`. With [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration) enabled, it will be kept up to date.
-
----
-
-Here's the MDX code for the example above:
-
-```js
-import { useSSG } from 'nextra/ssg'
-
-export const getStaticProps = ({ params }) => {
-  return fetch(`https://api.github.com/repos/shuding/nextra`)
-    .then((res) => res.json())
-    .then((repo) => ({
-      props: {
-        // We add an `ssg` field to the page props,
-        // which will be provided to the Nextra `useSSG` hook.
-        ssg: {
-          stars: repo.stargazers_count,
-        },
-      },
-      // The page will be considered as stale and regenerated every 60 seconds.
-      revalidate: 60,
-    }))
-}
-
-export const Stars = () => {
-  // Get the data from SSG, and render it as a component.
-  const { stars } = useSSG()
-  return <strong>{stars}</strong>
-}
+This is a cheat for Escape From Tarkov. For people that want something more advanced than EFT RU.
+It includes features like aimbot, esp and godmode. For the full feature list check it below.
 
 
-Nextra has <Stars /> stars on GitHub!
-```
+## Features
+
+<br />
+>#### AIMBOT
+>- Aim Lock
+>- Silent Aim
+>- BlueTrack
+>- Target Lock
+>- Jump Shot Aim Bot
+>- No Recoil
+>- Magic Bullet
+>- Magic Grenade
+>
+>#### ESP
+>- Dead Body ESP
+>- Preload Loot
+>- Players ESP
+>- Name ESP
+>- Grenade ESP
+>- Show Health
+>- Distance ESP
+>- Show Friendly
+>- Smart Friendly
+>- Smart Visibility
+>- Throwable
+>- Armor
+>- Airdrop
+>- ESP Icons
+>- Danger Warning
+>- And Much More!
+>
+>#### LOOT ESP
+>- Show Loot
+>- Customizble ESP
+>- Show Containers
+>- Show Exits
+>- Show Container Items
+>- Show Items By Categories
+>- Hide Empty Containers
+>- Kappa Items
+>- And Much More!
+>
+>#### EXPLOITS
+>- Infinite Stamina
+>- Move Whils CMS / Surv Kitting
+>- Faster Examine
+>- Faster Reload
+>- Faster Weapon Swap
+>- Loot Through Walls
+>- Night Vision
+>- Thermal Vision
+>- Remove Visor
+>- Gun Never Malfunctions
+>- Gun Never Overheats
+>- No FOG
+>- Danger Warning
+>- Radar
+>- Godmode
+>- Speed Hack
+
+<Callout>
+Livestream proof.
+This cheat works for every region.
+This product will be delivered instantly. You will receive a key and a link to the loader.
+The cheat will be updated ASAP after every patch. Not like other cheats.
+There is an automatic bulk discount when you buy more keys.
+Buy on discord to get a 5% discount.
+</Callout>
+
+## Requirements
+
+- [x] **Operating system:** Windows 7/10/11
+- [x] **CPU:** INTEL/AMD
+- [x] **Game:** Escape From Tarkov
+- [x] **For win7 users:** Force Aero
+
+## Download
+Download the loader [here](http://xswl2333.com/download.php?action=download)
+
+## Media
+
+#### Images
+
+import Image from 'next/image'
+
+<Image src="/screen1.png" width={960} height={540}/>
+<Image src="/screen2.png" width={960} height={540}/>
+<Image src="/screen3.png" width={960} height={540}/>
+<Image src="/screen4.png" width={960} height={540}/>
+
+import Callout from 'nextra-theme-docs/callout'
+
+## Troubleshoot
+If you have issues with launching the game please checkout this troubleshoot before contacting us.
+
+>#### NetConnection_1
+>This usually means you have no internet access or your anti virus is blocking the loader from accessing internet.
+>Please disable your anti virus. If this doesn't work, disable your firewalls. If this doesn't work check out which anti virus you have, if you don't have Windows >Defender, uninstall your current anti virus and use Windows Defender and disable Real time protection.
+
+>#### Other
+>Other known issues will be updated here
+
+## Shop
+To buy the cheat, please check our store [here](https://monuzo.cc/)
