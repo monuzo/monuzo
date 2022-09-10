@@ -4,14 +4,22 @@ This is a cheat for Escape From Tarkov. For people that want something more adva
 It includes features like aimbot, esp and godmode. For the full feature list check it below.
 
 
-## Features
+## Heading
 
 <br />
 
-### AIMBOT
-- test12
-- test2
-- test3
+# **Hello**, This Is a _Title_ Inside `h1`
+
+<h2>**Hello**, This Is a _Title_ Inside `h2`</h2>
+{/* using html tag to avoid being rendered in the sidebar */}
+
+### **Hello**, This Is a _Title_ Inside `h3`
+
+#### **Hello**, This Is a _Title_ Inside `h4`
+
+##### **Hello**, This Is a _Title_ Inside `h5`
+
+###### **Hello**, This Is a _Title_ Inside `h6`
 
 ## List
 
@@ -58,10 +66,8 @@ You can also add the `highlight=<line|range>` modifier to highlight specific lin
 ````markdown
 ```jsx highlight=4,6-8
 import useSWR from 'swr'
-
 function Profile() {
   const { data, error } = useSWR('/api/user', fetcher)
-
   if (error) return <div>failed to load</div>
   if (!data) return <div>loading...</div>
   return <div>hello {data.name}!</div>
@@ -71,10 +77,8 @@ function Profile() {
 
 ```jsx highlight=4,6-8
 import useSWR from 'swr'
-
 function Profile() {
   const { data, error } = useSWR('/api/user', fetcher)
-
   if (error) return <div>failed to load</div>
   if (!data) return <div>loading...</div>
   return <div>hello {data.name}!</div>
@@ -90,7 +94,6 @@ You can use \`content\` to wrap inline code content like: `let x = 1`.
 > Where some people measure progress in answers-right per test or tests-passed per year, we are more interested in Sistine-Chapel-Ceilings per Lifetime.
 >
 > — Alan Kay, A Personal Computer for Children of All Ages
-
 Nested quotes:
 
 > > Where some people measure progress in answers-right per test or tests-passed per year, we are more interested in Sistine-Chapel-Ceilings per Lifetime.
@@ -100,7 +103,6 @@ Nested quotes:
 > This is **great**.
 >
 > — Shu Ding.
-
 ## Table
 
 | Syntax        | Description |   Test Text |
@@ -118,21 +120,14 @@ React components and Markdown can be **mixed together**, for instance:
 >   Give [**Nextra**](https://github.com/shuding/nextra) a star!
 > </Callout>
 ```
-
 Renders:
-
 > <Callout>
 >   Give [**Nextra**](https://github.com/shuding/nextra) a star!
 > </Callout>
-
-{/* using html tag to avoid being rendered in the sidebar */}
 Generates:
-
 import Callout from 'nextra-theme-docs/callout'
-
 <div className="p-4 border border-gray-200 dark:border-gray-900 rounded mt-6">
 **Markdown With React Components**
-
 <Callout emoji="✅">
   **MDX** (the library), at its core, transforms MDX (the syntax) to JSX. It
   receives an MDX string and outputs a _JSX string_. It does this by parsing the
