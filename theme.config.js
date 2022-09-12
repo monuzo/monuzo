@@ -61,6 +61,7 @@ export default {
   prevLinks: true,
   nextLinks: true,
   footer: true,
+  footerEditLink: '',
   footerText: <>MIT {new Date().getFullYear()} © Monuzo.</>,
   unstable_faviconGlyph: '👋',
 }
