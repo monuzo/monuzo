@@ -1,12 +1,12 @@
 export default {
   github: 'https://github.com/shuding/nextra',
   docsRepositoryBase: 'https://github.com/shuding/nextra/blob/master',
-  titleSuffix: ' – Monuzo',
+  titleSuffix: ' – Documentation',
   logo: (
     <>
       <span className="mr-2 font-extrabold hidden md:inline">Monuzo</span>
       <span className="text-gray-600 font-normal hidden md:inline">
-        Game Cheats
+        Game Cheats Documentation
       </span>
     </>
   ),
