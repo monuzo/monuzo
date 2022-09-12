@@ -60,8 +60,7 @@ export default {
   search: true,
   prevLinks: true,
   nextLinks: true,
-  footer: false,
-  footerEditLink: 'Edit this page on GitHub',
-  footerText: <>MIT {new Date().getFullYear()} © Nextra.</>,
+  footer: true,
+  footerText: <>MIT {new Date().getFullYear()} © Monuzo.</>,
   unstable_faviconGlyph: '👋',
 }
