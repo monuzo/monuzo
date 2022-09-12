@@ -1,6 +1,5 @@
 export default {
-  github: 'https://github.com/shuding/nextra',
-  projectLink: 'https://monuzo.cc',
+  github: 'https://monuzo.cc',
   docsRepositoryBase: 'https://github.com/shuding/nextra/blob/master',
   titleSuffix: ' – Documentation',
   logo: (
