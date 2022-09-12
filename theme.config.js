@@ -4,7 +4,7 @@ export default {
   titleSuffix: ' – Monuzo',
   logo: (
     <>
-      <span className="mr-2 font-extrabold hidden md:inline">Nextra</span>
+      <span className="mr-2 font-extrabold hidden md:inline">Monuzo</span>
       <span className="text-gray-600 font-normal hidden md:inline">
         Game Cheats
       </span>
